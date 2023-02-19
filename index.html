@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+<body>
+    <div class="contenedor">
+        <div class="principal">
+            <div class="icono">a</div>
+            <div class="text_area">
+                <textarea name="textarea" rows="10" cols="10" placeholder="Ingrese el texto aqui" id="text_area"></textarea>
+            </div>
+            <div class="alerta">
+                <i class="fa-solid fa-circle-exclamation"></i><span class="indicacion">Solo letras minusculas y sin acentos</span>
+            </div>
+            <div class="botones">
+                <button class="boton" id="boton_encriptar">Encriptar</button>
+                <button class="boton" id="boton_desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="textos_encriptados">
+            <div class="lista_encriptados"></div>
+            <div class="alerta"><span>Puedes copiar al portapapeles haciendo click en el recuadro blanco</span>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>

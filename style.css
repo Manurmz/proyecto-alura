@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #EFF1FA;
+    
+}
+
+.contenedor{
+    display: flex;
+    height: 100vh;
+    
+}
+
+.principal{
+    flex: 2;
+    background-color:#EFF1FA;
+}
+
+.icono{
+    color: #0A3871;
+    font-size: 90px;
+    padding-left: 50px;
+}
+
+.text_area{
+    height: max-content;
+    padding-left: 50px;
+}
+
+textarea{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #0A3871;
+    border: none;
+    width: 85%;
+    height: 100%;
+    background-color: #EFF1FA;
+    padding: 20px;
+    resize: none;
+}
+textarea::placeholder {
+    color: #0A3871;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.alerta{
+    margin-left: 50px;
+    padding: 20px 0;
+    color:grey;
+}
+
+.indicacion{
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.textos_encriptados{
+    flex: 1;
+    height: 100vm;
+    padding: 20px;
+    padding-right: 50px;
+    min-width: 300px;
+    
+}
+
+.lista_encriptados{
+    background-color: white;
+    width: auto;
+    height: 80%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.lista_encriptados_nada{
+    background-image: url(/media/svgviewer-png-output.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tarjeta{
+    background: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #0A3871;
+    height: 90%;
+    padding: 15px 5px;
+    margin: 10px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    border: solid 1px #0A3871;
+    margin: 40px;
+    padding: 20px 60px;
+    border-radius: 20px;
+    font-size:20px;
+}
+
+#boton_encriptar{
+    background-color: #0A3871;
+    color: white;
+}
+
+#boton_desencriptar{
+    color: #0A3871;
+}
+
+/* Estilos para tabletas */
+@media (max-width: 768px) {
+    body{
+        height: max-content;
+    }
+    textarea{
+        height: 80px;
+    }
+    /* Otros estilos para tabletas */
+}
+
+  /* Estilos para teléfonos inteligentes */
+@media (max-width: 480px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    textarea{
+        min-height: 30px;
+    }
+
+    .botones{
+        flex-direction: column;
+    }
+
+    .boton{
+        margin: 10px 35px;
+    }
+
+    .textos_encriptados{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .lista_encriptados{
+        min-height: 100px;
+        align-items: center;
+    }
+    /* Otros estilos para teléfonos inteligentes */
+}
